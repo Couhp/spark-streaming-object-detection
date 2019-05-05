@@ -32,7 +32,7 @@ os.mkdir(result_folder)
 
 # detector 
 detector = ObjectDetection()
-detector.setModelTypeAsTinyYOLOv3()
+detector.setModelTypeAsRetinaNet()
 detector.setModelPath( os.path.join("yolo-tiny.h5"))
 detector.loadModel()
 detector.detectObjectsFromImage(input_image="exam.png",
